@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskBoardWebApi", "TaskBoardWebApi\TaskBoardWebApi.csproj", "{A3198827-A888-4C1B-A659-D24AE0A23EE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskBoardCore", "TaskBoardCore\TaskBoardCore.csproj", "{316D881B-7073-434B-92E0-A092AAA60C29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3198827-A888-4C1B-A659-D24AE0A23EE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3198827-A888-4C1B-A659-D24AE0A23EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3198827-A888-4C1B-A659-D24AE0A23EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3198827-A888-4C1B-A659-D24AE0A23EE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{316D881B-7073-434B-92E0-A092AAA60C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{316D881B-7073-434B-92E0-A092AAA60C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{316D881B-7073-434B-92E0-A092AAA60C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{316D881B-7073-434B-92E0-A092AAA60C29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
