@@ -8,6 +8,6 @@ namespace TaskBoardCore
 {
     public interface ITask
     {
-        Task Execute();
+        Task<int> Start();
     }
 }

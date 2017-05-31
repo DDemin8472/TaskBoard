@@ -56,3 +56,6 @@ C:\Code\Новая папка\TaskBoardWebApi\TaskBoardWebApi\bin\ru\System.Web.
 C:\Code\Новая папка\TaskBoardWebApi\TaskBoardWebApi\bin\ru\System.Web.Http.WebHost.resources.dll
 C:\Code\Новая папка\TaskBoardWebApi\TaskBoardWebApi\obj\Debug\TaskBoardWebApi.dll
 C:\Code\Новая папка\TaskBoardWebApi\TaskBoardWebApi\obj\Debug\TaskBoardWebApi.pdb
+C:\Code\Новая папка\TaskBoardWebApi\TaskBoardWebApi\bin\TaskBoardCore.dll
+C:\Code\Новая папка\TaskBoardWebApi\TaskBoardWebApi\bin\TaskBoardCore.pdb
+C:\Code\Новая папка\TaskBoardWebApi\TaskBoardWebApi\obj\Debug\TaskBoardWebApi.csprojResolveAssemblyReference.cache
