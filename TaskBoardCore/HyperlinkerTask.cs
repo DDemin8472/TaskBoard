@@ -102,6 +102,11 @@ namespace TaskBoardCore
 
         #region Public методы
 
+        public static HyperlinkerTask Create(int docId)
+        {
+            return new HyperlinkerTask(docId);
+        }
+
         /// <summary>
         /// Запустить задачу
         /// </summary>
@@ -112,7 +117,7 @@ namespace TaskBoardCore
             _ranAt = DateTime.Now;
 
             try
-            {                
+            {
                 return Execute(_docId);
             }
             catch (InvalidOperationException)

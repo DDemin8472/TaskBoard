@@ -48,7 +48,7 @@ namespace TaskBoardWebApi.Hubs
         /// <returns></returns>
         public TaskInfo AddTask(int docId)
         {
-            var task = _taskBoard.AddTask(docId);
+            var task = _taskBoard.AddTask(new HyperlinkerTask(docId));
 
             return task != null ? new TaskInfo()
                             {

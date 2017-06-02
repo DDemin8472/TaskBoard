@@ -19,7 +19,7 @@ namespace TaskBoardWebApi.Board
 
         private TaskBoard(IHubConnectionContext<dynamic> clients)
         {
-
+            _board.Clear();
         }
 
         public static TaskBoard<T> Instance
@@ -37,9 +37,11 @@ namespace TaskBoardWebApi.Board
             return hyperlinkerTask != null ? hyperlinkerTask : default(T);
         }
 
-        public T AddTask(int docId)
+        public T AddTask(T task)
         {
-            throw new NotImplementedException();
+            _board.TryAdd(task.Id, task);
+
+            return task;
         }
     }
 }
