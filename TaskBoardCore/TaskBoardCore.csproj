@@ -42,6 +42,8 @@
   <ItemGroup>
     <Compile Include="HyperlinkerTask.cs" />
     <Compile Include="ITask.cs" />
+    <Compile Include="Pipeline\PipelineCell.cs" />
+    <Compile Include="Pipeline\TaskPipeline.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaskStatus.cs" />
   </ItemGroup>

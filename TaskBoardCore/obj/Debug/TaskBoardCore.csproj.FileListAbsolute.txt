@@ -2,3 +2,4 @@ C:\Code\Новая папка\TaskBoardWebApi\TaskBoardCore\bin\Debug\TaskBoardC
 C:\Code\Новая папка\TaskBoardWebApi\TaskBoardCore\bin\Debug\TaskBoardCore.pdb
 C:\Code\Новая папка\TaskBoardWebApi\TaskBoardCore\obj\Debug\TaskBoardCore.dll
 C:\Code\Новая папка\TaskBoardWebApi\TaskBoardCore\obj\Debug\TaskBoardCore.pdb
+C:\Code\Новая папка\TaskBoardWebApi\TaskBoardCore\obj\Debug\TaskBoardCore.csprojResolveAssemblyReference.cache
