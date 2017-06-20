@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using TaskBoardCore;
+using TaskBoardCore.Pipeline;
 using TaskBoardWebApi.Hubs;
 
 namespace TaskBoardWebApi.Board
@@ -13,13 +14,13 @@ namespace TaskBoardWebApi.Board
     public class TaskBoard<T> where T : ITask
     {
         // Singleton instance
-        private readonly static Lazy<TaskBoard<T>> _instance = new Lazy<TaskBoard<T>>(() => new TaskBoard<T>(GlobalHost.ConnectionManager.GetHubContext<TaskBoardHub>().Clients));
+        private readonly static Lazy<TaskBoard<T>> _instance = new Lazy<TaskBoard<T>>(() => new TaskBoard<T>(GlobalHost.ConnectionManager.GetHubContext<TaskBoardHub>().Clients, 4));
+        
+        private readonly TaskPipeline _pipeline;
 
-        private readonly ConcurrentDictionary<string, T> _board = new ConcurrentDictionary<string, T>();
-
-        private TaskBoard(IHubConnectionContext<dynamic> clients)
+        private TaskBoard(IHubConnectionContext<dynamic> clients, int pipelineCapacity )
         {
-            _board.Clear();
+            _pipeline = new TaskPipeline ( pipelineCapacity );
         }
 
         public static TaskBoard<T> Instance
@@ -32,16 +33,12 @@ namespace TaskBoardWebApi.Board
 
         public T GetTask(string taskId)
         {
-            _board.TryGetValue(taskId, out T hyperlinkerTask);
-
-            return hyperlinkerTask != null ? hyperlinkerTask : default(T);
+            throw new NotImplementedException ();
         }
 
         public T AddTask(T task)
         {
-            _board.TryAdd(task.Id, task);
-
-            return task;
+            throw new NotImplementedException ();
         }
     }
 }

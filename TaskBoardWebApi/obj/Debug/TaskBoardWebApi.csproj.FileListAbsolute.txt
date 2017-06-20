@@ -59,3 +59,5 @@ C:\Code\Новая папка\TaskBoardWebApi\TaskBoardWebApi\obj\Debug\TaskBoar
 C:\Code\Новая папка\TaskBoardWebApi\TaskBoardWebApi\bin\TaskBoardCore.dll
 C:\Code\Новая папка\TaskBoardWebApi\TaskBoardWebApi\bin\TaskBoardCore.pdb
 C:\Code\Новая папка\TaskBoardWebApi\TaskBoardWebApi\obj\Debug\TaskBoardWebApi.csprojResolveAssemblyReference.cache
+C:\Code\Новая папка\TaskBoardWebApi\TaskBoardWebApi\bin\System.Web.Http.Cors.dll
+C:\Code\Новая папка\TaskBoardWebApi\TaskBoardWebApi\bin\System.Web.Http.Cors.xml
