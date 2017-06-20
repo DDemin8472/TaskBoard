@@ -7,22 +7,23 @@ using System.Threading.Tasks;
 
 namespace TaskBoardCore.Pipeline
 {
-    public class TaskPipeline<T>
+    public class WorkedPipeline<T> where T : ITask
     {
         private const int defaultPipelineCapacity = 5;
         private readonly ConcurrentDictionary<string, T> _workedPipeline;
-        private readonly ConcurrentDictionary<string, T> _waitedPipeline;
         private int _pipelineBlockCount;
 
-        public TaskPipeline() : this( defaultPipelineCapacity ) { }
+        public WorkedPipeline() : this( defaultPipelineCapacity ) { }
 
-        public TaskPipeline( int pipelineCapacity )
+        public WorkedPipeline( int pipelineCapacity )
         {
             this._workedPipeline = new ConcurrentDictionary<string, T> ();
-            this._waitedPipeline = new ConcurrentDictionary<string, T> ();
-
             this._pipelineBlockCount = pipelineCapacity;
         }
-        
+
+        public string Add( T task )
+        {
+            throw new NotImplementedException ();
+        }
     }
 }
