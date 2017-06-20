@@ -16,11 +16,11 @@ namespace TaskBoardWebApi.Board
         // Singleton instance
         private readonly static Lazy<TaskBoard<T>> _instance = new Lazy<TaskBoard<T>>(() => new TaskBoard<T>(GlobalHost.ConnectionManager.GetHubContext<TaskBoardHub>().Clients, 4));
         
-        private readonly TaskPipeline _pipeline;
+        private readonly TaskPipeline<T> _pipeline;
 
         private TaskBoard(IHubConnectionContext<dynamic> clients, int pipelineCapacity )
         {
-            _pipeline = new TaskPipeline ( pipelineCapacity );
+            _pipeline = new TaskPipeline<T> ( pipelineCapacity );
         }
 
         public static TaskBoard<T> Instance
